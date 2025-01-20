@@ -11,13 +11,15 @@
   --orange: #fea301;
   --black: #111111;
 }
+.container {
+  width: 85%;
+  margin: 0 auto;;
+}
 /* header area */
 .navarea {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* background-color: rgba(0, 0, 255, 0.473); */
-  width: 85%;
   margin: 20px auto;
 }
 .navarea .logo {
@@ -56,6 +58,7 @@
 }
 .contact-btn button {
   padding: 10px;
+  width: 197px;
   border: 1px solid;
   border-radius: 12px;
   background-color: var(--orange);
@@ -78,6 +81,50 @@ hr {
   border: 0.5px solid var(--orange);
 }
 
+/* banner area */
+
+.banner_wrapper {
+  margin-top: 20px;
+  margin-bottom: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+.banner-text .banner_title {
+  font-size: 4rem;
+  font-weight: 700;
+}
+.banner-text .banner_title .empowering {
+  color: var(--orange);
+}
+.banner-text .banner_title .vision {
+  color: #01acfd;
+}
+.banner-text .banner-dtl {
+  color: var(--black);
+  font-family: Quicksand;
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin: 24px 0;
+}
+.banner-text .banner-btn {
+  background-color: var(--black);
+  border-radius: 12px;
+  padding: 10px;
+  color: #ffffff;
+  font-size: 1.25rem;
+  font-weight: 700;
+  width: 197px;
+  border: 1 px solid;
+  cursor: pointer;
+}
+.banner-text .banner-btn:hover {
+  background-color: #ffffff;
+  color: var(--black);
+}
+
+
 /* responsive  */
 /* header resopnsive */
 
@@ -87,8 +134,18 @@ hr {
   .contact-btn button {
     display: none;
   }
-  .contact-btn .fa-solid, hr {
+  .contact-btn .fa-solid,
+  hr {
     display: block;
   }
 
+  /* banner  */
+  .banner_wrapper{
+    flex-direction: column-reverse;
+    margin-bottom: 40px;
+    
+  }
+  .banner-text{
+    text-align: center;
+  }
 }
