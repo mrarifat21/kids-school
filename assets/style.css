@@ -1,9 +1,94 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
-*{
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", serif;
 }
-body{
-    font-family: "Quicksand", serif;
+:root {
+  --sky-blue: #01acfd;
+  --white: #f7f7f7;
+  --orange: #fea301;
+  --black: #111111;
+}
+/* header area */
+.navarea {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: rgba(0, 0, 255, 0.473); */
+  width: 85%;
+  margin: 20px auto;
+}
+.navarea .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.navarea .logo span {
+  color: var(--black);
+  font-weight: 700;
+  font-size: 2rem;
+}
+.main-menu ul {
+  display: flex;
+}
+.main-menu ul li {
+  list-style: none;
+  padding: 16px 32px;
+}
+.main-menu ul li a {
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+.item1 {
+  color: #fea301;
+}
+.item2 {
+  color: #01acfd;
+}
+.item3 {
+  color: #05d4df;
+}
+.item4 {
+  color: #5d58ef;
+}
+.contact-btn button {
+  padding: 10px;
+  border: 1px solid;
+  border-radius: 12px;
+  background-color: var(--orange);
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.contact-btn button:hover {
+  background-color: #ffffff;
+  color: var(--orange);
+}
+.contact-btn .fa-solid {
+  display: none;
+  color: var(--black);
+  font-size: 2rem;
+}
+hr {
+  display: none;
+  border: 0.5px solid var(--orange);
+}
+
+/* responsive  */
+/* header resopnsive */
+
+@media only screen and (max-width: 576px) {
+  .navarea .logo span,
+  .main-menu,
+  .contact-btn button {
+    display: none;
+  }
+  .contact-btn .fa-solid, hr {
+    display: block;
+  }
+
 }
