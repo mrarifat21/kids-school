@@ -128,7 +128,7 @@ hr {
   color: var(--black);
 }
 
-/* Curriculum */
+/* ============= Curriculum ============== */
 .curriculum {
   border-top: 2px dashed #ddd;
   border-bottom: 2px dashed #ddd;
@@ -233,6 +233,12 @@ hr {
   color: #ffffff;
   cursor: pointer;
 }
+.curriculum .marquee-text p{
+  padding: 3px;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--sky-blue);
+}
 /* ============ stories ============ */
 .stories {
   background: url(bg.png),
@@ -242,92 +248,93 @@ hr {
   background-size: cover; */
   padding: 70px;
 }
-.stories_wrapper .story-title {
+.story-title {
   color: #000000;
+  text-align: center;
   font-size: 2.875rem;
   font-weight: 700;
-  text-align: center;
+  margin-bottom: 80px;
+}
+.one, .twoall {
+  position: relative;
+}
+.single-story{
+    background-color: #ffffff;
 }
 .story-cards {
-  margin: 80px 0;
-  display: grid;
-  grid-template-areas:
-    "one one one one two  two  two  two  three three three three"
-    "one one one one two  two  two  two  three three three three"
-    "one one one one four four four four five  five  five  five"
-    "one one one one four four four four five  five  five  five";
-  gap: 10px;
-}
-.one {
-  grid-area: one;
-}
-.two {
-  grid-area: two;
-}
-.three {
-  grid-area: three;
-}
-.one {
-  grid-area: one;
-}
-.four {
-  grid-area: four;
-}
-.five {
-  grid-area: five;
-}
-.scardOne-wrapper img {
-  /* width: 100%; */
-  border-top-left-radius: 16px;
-  border-top-right-radius: 16px;
-}
-/* .sdate{
-  position: static;
-top:-50%
-} */
-.sdate p {
-  font-family: Raleway;
-  font-size: 1rem;
-  color: #ffffff;
-  font-weight: 500;
-  border-radius: 45px;
+    /* margin: 80px 0; */
+    display: grid;
+    grid-template-areas:
+      "one one one one two  two  two  two  three three three three"
+      "one one one one two  two  two  two  three three three three"
+      "one one one one four four four four five  five  five  five"
+      "one one one one four four four four five  five  five  five"
+      "one one one one four four four four five  five  five  five"
+      "one one one one four four four four five  five  five  five";
+    gap: 10px;
+  }
+  .one {
+    grid-area: one;
+  }
+  .two {
+    grid-area: two;
+  }
+  .three {
+    grid-area: three;
+  }
+  .one {
+    grid-area: one;
+  }
+  .four {
+    grid-area: four;
+  }
+  .five {
+    grid-area: five;
+  }
+.sdate-sky {
+  background-color: #3cd8e8;
+  position: absolute;
   width: 175px;
-  text-align: center;
-  background: rgb(60, 216, 232);
-  padding: 15px 20px;
+  height: 45px;
+  left: 38px;
+  top: 314px;
+  border-radius: 47px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.sdate-green p {
-  background-color: #95b226;
+.sdate-sky span {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 500;
 }
-.sdate-blue p {
-  background-color: #5d58f0;
-}
-.single-story {
-  background: #ffffff;
-  border-radius: 16px;
-  padding: 0 35px;
-}
-.single-story .scard-title {
+.scard-title {
+  color: #000000;
   font-size: 1.5rem;
   font-weight: 700;
-  margin-top: 45px;
-  margin-bottom: 45px;
+  margin: 60px 0 45px;
 }
-.single-story .scardTwo {
-  font-size: 1rem;
+.sdate-green, .sdate-blue {
+  background: #95b226;
+  position: absolute;
+  width: 174.51px;
+  height: 38.35px;
+  left: 38.35px;
+  top: 157.81px;
+  border-radius: 47px;
+  display: flex;
+  align-items: center;
+  justify-content: center
 }
-.single-story .scard-dtl {
-  color: #666666;
-  font-family: Raleway;
-  font-size: 15.34px;
-  font-weight: 500;
-  padding-bottom: 34px;
+.sdate-blue{
+    background: #5D58F0;
 }
 
 .card-btn {
   text-align: center;
 }
 .card-btn button {
+  margin-top: 50px;
   border-radius: 12px;
   background: var(--black);
   padding: 10px;
