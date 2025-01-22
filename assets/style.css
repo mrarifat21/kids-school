@@ -249,6 +249,13 @@ hr {
   padding: 70px;
   margin-top: 50px;
 }
+.story-title {
+  color: #000000;
+  text-align: center;
+  font-size: 2.875rem;
+  font-weight: 700;
+  margin-bottom: 80px;
+}
 .story_card {
   display: flex;
   gap: 20px;
@@ -483,14 +490,13 @@ responsive
     width: 100%;
   }
   .scard-title2{
-    
     margin-top: 35px;
     font-size: 12px;
   }
   .sdate2 {
     position: absolute;
     left: 40px;
-    top: 140px;
+    top: 165px;
     font-size: 12px;
   }
   .story-2-5{
